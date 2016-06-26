@@ -19,3 +19,4 @@ encrypt:
     password: confserver
     location: classpath:keystore.jks
     secret: confserver
+

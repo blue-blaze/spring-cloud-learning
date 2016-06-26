@@ -18,9 +18,10 @@ public class SpringConfigClientMain {
     private Rule rule;
 
     @Bean
-    public CommandLineRunner init(){
-        return args ->{
-            log.info("config rule from remote,name: {}, desc: {}",rule.getName(),rule.getDesc());
+    public CommandLineRunner init() {
+        return args -> {
+            log.info("config rule from remote,name: {}, desc: {},secret,{}", rule.getName(),
+                    rule.getDesc(), rule.getSecret());
         };
     }
 
