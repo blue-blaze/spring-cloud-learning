@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: configClient
+  cloud:
+    config:
+      uri: http://localhost:8899

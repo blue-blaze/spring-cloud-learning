@@ -1,0 +1,21 @@
+server:
+  port: 8899
+
+logging:
+  level:
+   com.netflix.discovery: 'OFF'
+   org.springframework.cloud: 'DEBUG'
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/blue-blaze/spring-cloud-learning.git
+          search-paths: conf-repo
+encrypt:
+  key-store:
+    alias: confserver
+    password: confserver
+    location: classpath:keystore.jks
+    secret: confserver

@@ -5,12 +5,12 @@
         <groupId>me.learning</groupId>
         <version>1.0.0</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-cloud-configserver</artifactId>
+
+    <artifactId>spring-cloud-configclient</artifactId>
     <packaging>jar</packaging>
 
-    <name>spring-cloud-configserver</name>
+    <name>spring-cloud-configclient</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -22,13 +22,8 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-        </dependency>
-
     </dependencies>
+
 
     <build>
         <plugins>
