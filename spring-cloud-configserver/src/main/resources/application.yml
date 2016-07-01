@@ -13,10 +13,15 @@ spring:
         git:
           uri: https://github.com/blue-blaze/spring-cloud-learning.git
           search-paths: conf-repo
+  rabbitmq:
+    host: 192.168.99.100
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
 encrypt:
   key-store:
     alias: confserver
     password: confserver
     location: classpath:keystore.jks
     secret: confserver
-

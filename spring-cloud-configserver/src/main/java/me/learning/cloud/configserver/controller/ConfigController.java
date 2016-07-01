@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by lcheng on 2016/6/25.
  */
-@RestController("/conf")
+@RestController
+@RequestMapping("/confServer")
 public class ConfigController {
 
     @RequestMapping("/get")
